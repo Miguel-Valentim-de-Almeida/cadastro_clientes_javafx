@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cadastro_cliente.TelaController">
+   <children>
+      <TextField fx:id="campoNome" layoutX="84.0" layoutY="79.0" />
+      <TextField fx:id="campoRua" layoutX="84.0" layoutY="193.0" />
+      <TextField fx:id="campoCidade" layoutX="84.0" layoutY="251.0" />
+      <TextField fx:id="campoEstado" layoutX="382.0" layoutY="193.0" />
+      <TextField fx:id="campoCEP" layoutX="84.0" layoutY="135.0" promptText="99999-999" />
+      <TextField fx:id="campoNumero" layoutX="382.0" layoutY="131.0" />
+      <TextField fx:id="campoTelefone" layoutX="382.0" layoutY="79.0" />
+      <Button fx:id="buttonGravar" layoutX="331.0" layoutY="322.0" mnemonicParsing="false" onAction="#gravar" text="Gravar" />
+      <Button fx:id="buttonLimpar" layoutX="196.0" layoutY="322.0" mnemonicParsing="false" onAction="#limpar" text="Limpar" />
+      <Button fx:id="buttonBuscar" layoutX="249.0" layoutY="135.0" mnemonicParsing="false" onAction="#buscarEndereco" text="Buscar" />
+      <Label layoutX="35.0" layoutY="83.0" text="Nome" />
+      <Label layoutX="320.0" layoutY="83.0" text="Telefone" />
+      <Label layoutX="41.0" layoutY="135.0" text="CEP" />
+      <Label layoutX="41.0" layoutY="192.0" text="Rua" />
+      <Label layoutX="321.0" layoutY="135.0" text="Número" />
+      <Label layoutX="325.0" layoutY="192.0" text="Estado" />
+      <Label layoutX="33.0" layoutY="255.0" text="Cidade" />
+      <Label layoutX="191.0" layoutY="14.0" text="Cadastro de Clientes">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

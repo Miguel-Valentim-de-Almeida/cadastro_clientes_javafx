@@ -1,7 +1,7 @@
 package com.cadastro_cliente;
 
 public class Cliente {
-    private static Integer codigo;
+    private static Integer codigo = 0;
     private String nome;
     private Endereco endereco;
     private String telefone;
