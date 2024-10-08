@@ -33,6 +33,8 @@ public class TelaController {
 
     @FXML
     private void initialize() {
+        cliente = new Cliente();
+        endereco = new Endereco();
         buscador = new Buscador();
         listaClientes = new ArrayList<Cliente>();
     }
@@ -50,7 +52,6 @@ public class TelaController {
 
     @FXML
     private void gravar() {
-        Cliente cliente = new Cliente();
         cliente.setNome(campoNome.getText());
         cliente.setTelefone(campoTelefone.getText());
         cliente.setEndereco(new Endereco(campoCEP.getText(), campoRua.getText(), campoNumero.getText(), campoCidade.getText(), campoEstado.getText()));
@@ -62,7 +63,7 @@ public class TelaController {
     private void buscarEndereco() {
         String cep = campoCEP.getText();
         try {
-            Endereco endereco = buscador.buscar(cep);
+            endereco = buscador.buscar(cep);
             campoRua.setText(endereco.getRua());
             campoCidade.setText(endereco.getCidade());
             campoEstado.setText(endereco.getEstado());
